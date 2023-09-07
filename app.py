@@ -1,17 +1,11 @@
 from flask import Flask,render_template,request
-# import pickle
-import joblib
+import pickle
 import numpy as np
 
-# popular_df = pickle.load(open('popular.pkl','rb'))
-# pt = pickle.load(open('pt.pkl','rb'))
-# anime = pickle.load(open('anime.pkl','rb'))
-# similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
-
-popular_df = joblib.load(open('popular.joblib','rb'))
-pt = joblib.load(open('pt.joblib','rb'))
-anime = joblib.load(open('anime.joblib','rb'))
-similarity_scores = joblib.load(open('similarity_scores.joblib','rb'))
+popular_df = pickle.load(open('popular.pkl','rb'))
+pt = pickle.load(open('pt.pkl','rb'))
+anime = pickle.load(open('anime.pkl','rb'))
+similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
 
 app = Flask(__name__)
 
