@@ -8,10 +8,10 @@ import numpy as np
 # anime = pickle.load(open('anime.pkl','rb'))
 # similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
 
-popular_df = joblib.load(open('popular.pkl','rb'))
-pt = joblib.load(open('pt.pkl','rb'))
-anime = joblib.load(open('anime.pkl','rb'))
-similarity_scores = joblib.load(open('similarity_scores.pkl','rb'))
+popular_df = joblib.load(open('popular.joblib','rb'))
+pt = joblib.load(open('pt.joblib','rb'))
+anime = joblib.load(open('anime.joblib','rb'))
+similarity_scores = joblib.load(open('similarity_scores.joblib','rb'))
 
 app = Flask(__name__)
 
