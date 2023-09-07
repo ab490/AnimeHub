@@ -1,4 +1,4 @@
 flask
-numpy==1.23.5
+numpy
 pandas==1.5.3
 gunicorn
